@@ -1,0 +1,696 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+/* ///////////// */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Roboto Light";
+}
+/* HEADER */
+
+header{
+    margin: 0px 0px -10px;
+}
+
+h1, h2, h3, a {
+    font-family: "Roboto Bold";
+}
+
+/* NAV */
+
+header>nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 75px;
+}
+header>nav img{
+    width: 50px;
+}
+
+header>nav ul{
+    font-family: "Roboto Bold";
+
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+}
+
+header>nav li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0px 25px;
+
+}
+
+header>nav li a:hover{
+    color: #FE4676;
+    
+}
+
+/* BORDER NAV BAR */
+header>nav li:not(:last-child){
+    border-right: 1px solid black;
+}
+
+
+/* ///////////// */
+/* IMAGE HEADER*/
+.backgroundHeader{
+    background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+
+}
+
+/* TITRE HEADER */
+.backgroundHeader h1{
+    font-family: "Roboto Bold";
+    padding: 0 14% ;
+    position: relative;
+    top: 30%;
+    font-size: 4.2rem;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+    margin: 15px;
+    letter-spacing: 3px;
+
+}
+/* BTN */
+.backgroundHeader a{
+    position: relative;
+    top: 30%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FE4676;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.backgroundHeader a:hover{
+    background-color: white;
+    color: #FE4676;
+    border: 1px solid #FE4676;
+}
+
+
+
+/* ///////////// */
+
+/* SECTION APPROCHE */
+
+#approche {
+    text-align: center;
+}
+
+#approche p{
+    margin:5px 0 50px;
+}
+
+#approche>h2{
+    margin: 50px 0 0;
+}
+/* TAILLE IMAGE SECTION 1 */
+.approcheFlex img{
+    width: 40%;
+}
+/* FLEXBOX SECTION APPROCHE */
+.approcheFlex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* TEXTE SECTION APPROCHE */
+.approcheTxt{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.approcheTxt h3, ul{
+    text-align: start;
+    padding: 0;
+    
+    list-style-type: '- ';
+}
+
+.approcheTxt>h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.approcheTxt>ul{
+    margin-bottom: 40px;
+}
+
+.approcheTxt>ul>li{
+    margin-left: 10px;
+}
+
+/* IMAGE SÉPARATION SECTION */
+.separationImage{
+    background-image: url(../img/Ligne.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
+    height: 10px;
+    margin: 50px auto;
+}
+
+/* ///////////// */
+
+/* SECTION METHODE */
+
+.termes{
+    font-family: "Roboto Bold";
+}
+
+#methode>p{
+    padding: 0 430px 20px;
+}
+/* BTN */
+#methode>a{
+    text-decoration: none;
+    color: #FE4676;
+    border: 1px solid #FE4676;
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#methode>a:hover{
+    background-color: #FE4676;
+    color: #fff;
+}
+
+/* FLEXBOX SECTION METHODE  */
+.methodes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: baseline;
+    gap: 100px;
+}
+
+.methodes>div{
+    width: 30%;
+}
+
+/* TAILLE ICONE */
+.methodes>div>img{
+    width: 70px;
+
+}
+
+.methodes>div>h3 p{
+    padding: 0 160px;
+}
+.methodes>div>p{
+    font-size: 0.9rem;
+}
+
+/* ///////////// */
+accompagnements
+/* SECTION ACCOMPAGNEMENTS*/
+
+/* TITRE SECTION & TEXTE*/
+
+#accompagnements>h2{
+    margin-bottom: 0;
+}
+
+.accompagnementsTitre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#accompagnements>p{
+    margin: 0;
+}
+
+/* FLEXBOX SECTION 3 */
+
+.accompagnementsFlex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+.talents, .carriere, .forceCo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+.accompagnementsFlex ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    }
+    
+.accompagnementsFlex a {
+    display: inline-block;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #FE4676;
+    border: 1px solid #FE4676;
+    padding: 8px 30px;
+    border-radius: 5px;
+    }
+    
+.accompagnementsFlex a:hover{
+    background-color: #FE4676;
+    color: #fff;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.5rem;
+    }
+    
+.accompagnementsFlex .talents h3::after{
+    content: "TES TALENTS";
+    display: block;
+    background: linear-gradient(0deg, #84D6EB 50%, white 50%);
+    }
+    
+
+.accompagnementsFlex .carriere h3::after{
+    content: "TA CARRIÈRE";
+    display: block;
+    background: linear-gradient(0deg, #FDE17A 50%, white 50%);
+    }
+    
+.accompagnementsFlex .forceCo h3::after{
+    content: "FORCE COMMERCIALE";
+    display: block;
+    background: linear-gradient(0deg, #CD84EB 50%, white 50%);
+    }
+
+
+.accompagnementsFlex ul li{
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+.bloc2{
+    width: 13%;
+}
+
+#accompagnements>.separationImage{
+    margin-top: 20px;
+}
+
+/* ///////////// */
+
+/* SECTION AVIS */
+
+.avisFlex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 0;
+}
+
+.avisFlex>div{
+    width: 25%;
+    height: auto;
+    padding-bottom: 100px;
+    border: 1px solid #3BD8C6;
+}
+
+.avisFlex>div>p{
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.avisFlex>div>h5{
+    margin: 0;
+}
+
+.avisFlex>div>img{
+    position: relative;
+    border: 10px solid white;
+    margin-top: -3rem;
+}
+
+.avisFlex>div>h3{
+    margin: 0;
+}
+
+/* ///////////// */
+
+/* SECTION BLOG */
+
+.article1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.articleTxt{
+    text-align: left;
+    width: 60%;
+
+}
+
+.article1>div>p{
+    margin-bottom: 30px;
+}
+
+.articleTxt>h3{
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0;
+    width: 200px;
+}
+
+.article1>div>h5{
+    margin-top: 0;
+}
+
+hr{
+    border: 1px solid #3BD8C6;
+    width: 90%;
+    margin: 75px auto;
+}
+
+
+.article2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.article2>div>h5{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.article2>div>p{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#blog a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #FE4676;
+    border: 1px solid #FE4676;
+    border-radius: 5px;
+    padding: 8px 50px;
+}
+
+#blog a:hover{
+    background-color: #FE4676;
+    color: white;
+}
+
+.articleTxt:last-child>h3{
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0;
+    width: 400px;
+}
+
+/* ///////////// */
+
+/* FOOTER */
+
+footer{
+    background-color: #E2E2E2;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.footerFlex>img{
+    padding: 10px 40px 10px 0;
+    border-right: 1px solid black;
+    height: 13vh;
+}
+
+
+.footerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 300px;
+}
+
+.footerTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.footerTxt>h4{
+    margin: 0;
+    font-size: 0.85rem;
+
+}
+
+.footerTxt>p:nth-child(2){
+    width: 400px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.footerTxt>p:nth-child(3), p:nth-child(4){
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.footerTxt>a{
+    font-size: 0.8rem;
+}
+
+
+.footerTxt>a, h4>a{
+    text-decoration:none;
+    color: black;
+}
+
+/* NAV */
+
+/* NAV */
+
+footer>nav{
+    display: flex;
+    justify-content: center;
+    margin: 0 75px;
+    font-size: 0.9rem;
+}
+footer>nav img{
+    width: 50px;
+}
+
+footer>nav ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+}
+
+footer>nav li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0px 5px 0 5px;
+}
+
+footer>nav li{
+    border-left: 1px solid #000;
+    padding-left: 5px;
+}
+
+footer>nav li:first-child{
+    border-left: none;
+}
+
+nav>ul>li>a:first-child{
+    font-family: "Roboto Regular";
+}
+
+/* //////////// */
+
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 768px) {
+
+    header>nav li a{
+        padding: 0px 4px;
+
+    }
+
+    header>nav{
+        margin: 0px 40px
+    }
+
+    /*  */
+
+    .backgroundHeader{
+        height: 50vh;
+    }
+
+    .backgroundHeader h1{
+        font-size: 3rem;
+        top: 20%;
+    }
+
+    .backgroundHeader a{
+        top: 20%;
+    }
+
+    /*  */
+    .approcheFlex{
+        align-items: center;
+    }
+
+    .approcheFlex img {
+        width: 40%;
+        height: 40vh;
+    }
+
+    .approcheTxt>h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .approcheTxt>ul{
+        margin-bottom: 10px;
+    }
+
+    /*  */
+
+    #methode>p {
+        padding: 0 100px 20px;
+    }
+
+    .methodes{
+        gap: 50px;
+    }
+
+
+    /*  */
+
+    .footerTxt>p:nth-child(2){
+        width: 250px;
+    }
+
+    .footerFlex{
+        margin: 20px 0 0 120px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    body{
+        width: 150%;
+    }
+
+    header>nav{
+        margin: 0 75px;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header>nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header>nav li:not(:last-child){
+        border: none;
+    }
+
+    /*  */
+
+    .approcheFlex{
+        flex-direction: column;
+    }
+
+
+    .approcheTxt>h3{
+        margin: 10px;
+    }
+
+    .approcheFlex img{
+        width: 50%;
+        height: auto;
+    }
+
+    #accompagnements>p{
+        padding: 0px 10px;
+    }
+
+    /*  */
+
+
+    .avisFlex{
+        flex-wrap: wrap;
+        gap: 75px;
+    }
+
+    .avisFlex>div{
+        width: 90%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    /*  */
+
+    .articleTxt{
+        text-align: center;
+    }
+
+    .article1, .article2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articleTxt:last-child>h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .article1>div>p, .article2>div>p, h5{
+        text-align: center;
+    }
+
+
+    /*  */
+
+    footer>nav{
+        margin: 0;
+    }
+}
